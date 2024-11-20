@@ -51,6 +51,42 @@ This project introduces an advanced system for real-time detection and identific
    git clone https://github.com/BD-BAHAR/HoloLens-2-look-alike-vial-detection.git
    cd HoloLens-2-look-alike-vial-detection
 
+##🔧 Open in Unity
+#Launch Unity: Open Unity version 2022.3.1f1. If not installed, download it from the Unity Download Archive.
+#Open the Project Folder:
+From the Unity Hub, click Open Project and select the folder containing the cloned repository.
+Install the Mixed Reality Toolkit (MRTK):
+Open Window > Package Manager.
+Click + Add package from Git URL... and enter:
+bash
+Copy code
+**https://github.com/microsoft/MixedRealityToolkit-Unity.git#release/2.7.3
+Wait for the toolkit to download and install.
+🚀 Build and Deploy
+Set Build Platform:
+Go to File > Build Settings.
+Select Universal Windows Platform (UWP) and click Switch Platform.
+In the Build Settings, ensure:
+Target Device: HoloLens.
+Architecture: ARM64.
+Build Type: D3D Project.
+Build the Application:
+Click Build and choose an empty folder to save the build output.
+Once the build process completes, navigate to the folder and open the .sln file in Visual Studio.
+Deploy to HoloLens 2:
+In Visual Studio:
+Set the Solution Configuration to Release and ARM64.
+Select Device as the target platform.
+Connect your HoloLens 2 to your computer.
+Click Deploy to install the app on the HoloLens.
+##🗄️ Set Up the Database
+Create the SQL Database:
+Use the SQL scripts provided in the /Database folder to create and populate the database.
+Run the scripts in your SQL server environment to set up the tables and data.
+Configure Server Connection:
+Ensure the Unity application can communicate with the SQL server. This may involve setting up a local network or cloud-hosted server for real-time database access.
+
+
 ## 📜 Citation
 If you use this project, please cite: Mahmud, B.U.; Hong, G.Y.; Sharmin, A.; Asher, Z.D.; Hoyle, J.D., Jr. Accurate Medical Vial Identification Through Mixed Reality: A HoloLens 2 Implementation. Electronics 2024, 13, 4420. https://doi.org/10.3390/electronics13224420
 
