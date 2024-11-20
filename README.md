@@ -10,6 +10,6 @@ Accurate identification of medicine vials is crucial for emergency medical servi
 
 
 
-**Environment:**
+#**Environment:**
 Hololens 2
 Unity 2022.3.1f1
